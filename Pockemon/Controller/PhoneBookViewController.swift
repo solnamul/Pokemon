@@ -11,7 +11,7 @@ class PhoneBookViewController: UIViewController {
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.layer.cornerRadius = 75 // 원형으로 만들기 위해 반지름 설정
+        imageView.layer.cornerRadius = 75
         imageView.layer.borderWidth = 1
         imageView.layer.borderColor = UIColor.gray.cgColor
         imageView.clipsToBounds = true

@@ -101,7 +101,7 @@ class FriendCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         label.textColor = .black
-        label.textAlignment = .right // 번호를 오른쪽 정렬
+        label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
