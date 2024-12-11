@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     // 테이블 뷰 선언
     let tableView = UITableView()
     
-    // 더미 데이터
+    // 더미
     let dummyData = [
         ("피카츄", "010-0000-0000"),
         ("라이츄", "010-0000-0000"),
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         title = "친구 목록"
         
-        // "추가" 버튼
+        // 추가 버튼!
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "추가", style: .plain, target: self, action: #selector(addFriend))
         
         setupTableView()
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(FriendCell.self, forCellReuseIdentifier: "FriendCell")
-        tableView.rowHeight = 80 // 셀 높이 설정
+        tableView.rowHeight = 80
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
         
@@ -79,11 +79,11 @@ class FriendCell: UITableViewCell {
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 30 // 원형으로 만들기 위해 반지름 설정
-        imageView.layer.borderWidth = 1 // 테두리 두께
-        imageView.layer.borderColor = UIColor.gray.cgColor // 테두리 색상
-        imageView.clipsToBounds = true // 이미지가 원 밖으로 나가지 않도록 설정
-        imageView.backgroundColor = .white // 기본 프로필 배경색
+        imageView.layer.cornerRadius = 30
+        imageView.layer.borderWidth = 1
+        imageView.layer.borderColor = UIColor.gray.cgColor
+        imageView.clipsToBounds = true // 이미지가 밖으로 나가지 않도록 설정!
+        imageView.backgroundColor = .white
         return imageView
     }()
     
@@ -98,7 +98,7 @@ class FriendCell: UITableViewCell {
     let phoneLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-        label.textColor = .gray
+        label.textColor = .black
         label.textAlignment = .right // 번호를 오른쪽 정렬
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -115,18 +115,18 @@ class FriendCell: UITableViewCell {
         NSLayoutConstraint.activate([
             // 프로필 이미지
             profileImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            profileImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            profileImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
             profileImageView.widthAnchor.constraint(equalToConstant: 60),
             profileImageView.heightAnchor.constraint(equalToConstant: 60),
             
             // 이름 (가운데 정렬)
             nameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            nameLabel.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 16),
+            nameLabel.leadingAnchor.constraint(equalTo: profileImageView.trailingAnchor, constant: 12),
+            nameLabel.trailingAnchor.constraint(lessThanOrEqualTo: phoneLabel.leadingAnchor, constant: -8),
             
             // 번호 (오른쪽 정렬)
             phoneLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            phoneLabel.leadingAnchor.constraint(greaterThanOrEqualTo: nameLabel.trailingAnchor, constant: 8),
-            phoneLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16)
+            phoneLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24)
         ])
     }
     
