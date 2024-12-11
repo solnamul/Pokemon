@@ -48,16 +48,6 @@
 			path = Pockemon;
 			sourceTree = "<group>";
 		};
-		9B3D30682D09EFFE003CC8CD /* PockemonTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PockemonTests;
-			sourceTree = "<group>";
-		};
-		9B3D30722D09EFFE003CC8CD /* PockemonUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PockemonUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				9B3D304E2D09EFFD003CC8CD /* Pockemon */,
-				9B3D30682D09EFFE003CC8CD /* PockemonTests */,
-				9B3D30722D09EFFE003CC8CD /* PockemonUITests */,
 				9B3D304D2D09EFFD003CC8CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				9B3D30672D09EFFE003CC8CD /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				9B3D30682D09EFFE003CC8CD /* PockemonTests */,
-			);
 			name = PockemonTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				9B3D30712D09EFFE003CC8CD /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9B3D30722D09EFFE003CC8CD /* PockemonUITests */,
 			);
 			name = PockemonUITests;
 			packageProductDependencies = (
@@ -293,7 +275,6 @@
 				INFOPLIST_FILE = Pockemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +301,6 @@
 				INFOPLIST_FILE = Pockemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
