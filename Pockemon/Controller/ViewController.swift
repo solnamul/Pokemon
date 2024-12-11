@@ -5,6 +5,7 @@
 //  Created by t2023-m105 on 11/12/24.
 //
 
+
 import UIKit
 import SnapKit
 
@@ -13,7 +14,7 @@ class ViewController: UIViewController {
     // 테이블 뷰 선언
     let tableView = UITableView()
     
-    // 더미
+    // 더미 데이터
     let dummyData = [
         ("피카츄", "010-0000-0000"),
         ("라이츄", "010-0000-0000"),
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         title = "친구 목록"
         
-        // 추가 버튼!
+        // 추가 버튼
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "추가", style: .plain, target: self, action: #selector(addFriend))
         
         setupTableView()
@@ -53,7 +54,8 @@ class ViewController: UIViewController {
     
     // "추가" 버튼 액션
     @objc func addFriend() {
-        print("친구 추가 버튼 클릭!")
+        let phoneBookVC = PhoneBookViewController() // 새로 만든 ViewController로 이동
+        navigationController?.pushViewController(phoneBookVC, animated: true)
     }
 }
 
@@ -82,7 +84,7 @@ class FriendCell: UITableViewCell {
         imageView.layer.cornerRadius = 30
         imageView.layer.borderWidth = 1
         imageView.layer.borderColor = UIColor.gray.cgColor
-        imageView.clipsToBounds = true // 이미지가 밖으로 나가지 않도록 설정!
+        imageView.clipsToBounds = true // 이미지가 밖으로 나가지 않도록 설정
         imageView.backgroundColor = .white
         return imageView
     }()
