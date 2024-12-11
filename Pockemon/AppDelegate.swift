@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Pockemon
 //
-//  Created by t2023-m105 on 12/12/24.
+//  Created by t2023-m105 on 11/12/24.
 //
 
 import UIKit
@@ -14,14 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        // UIWindow 생성 및 초기 ViewController 설정
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UINavigationController(rootViewController: ViewController())
+        window.rootViewController = UINavigationController(rootViewController: ViewController()) // UINavigationController 사용
         window.makeKeyAndVisible()
         self.window = window
         
         return true
     }
+
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
@@ -66,6 +67,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
-
