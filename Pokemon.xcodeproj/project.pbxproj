@@ -34,7 +34,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9B3D30772D09EFFE003CC8CD /* Exceptions for "Pockemon" folder in "Pockemon" target */ = {
+		9B3D30772D09EFFE003CC8CD /* Exceptions for "Pokemon" folder in "Pockemon" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -44,12 +44,12 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9B3D304E2D09EFFD003CC8CD /* Pockemon */ = {
+		9B3D304E2D09EFFD003CC8CD /* Pokemon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9B3D30772D09EFFE003CC8CD /* Exceptions for "Pockemon" folder in "Pockemon" target */,
+				9B3D30772D09EFFE003CC8CD /* Exceptions for "Pokemon" folder in "Pockemon" target */,
 			);
-			path = Pockemon;
+			path = Pokemon;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -83,7 +83,7 @@
 		9B3D30432D09EFFC003CC8CD = {
 			isa = PBXGroup;
 			children = (
-				9B3D304E2D09EFFD003CC8CD /* Pockemon */,
+				9B3D304E2D09EFFD003CC8CD /* Pokemon */,
 				9B3D304D2D09EFFD003CC8CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,7 +114,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9B3D304E2D09EFFD003CC8CD /* Pockemon */,
+				9B3D304E2D09EFFD003CC8CD /* Pokemon */,
 			);
 			name = Pockemon;
 			packageProductDependencies = (
@@ -187,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B3D30472D09EFFC003CC8CD /* Build configuration list for PBXProject "Pockemon" */;
+			buildConfigurationList = 9B3D30472D09EFFC003CC8CD /* Build configuration list for PBXProject "Pokemon" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -515,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B3D30472D09EFFC003CC8CD /* Build configuration list for PBXProject "Pockemon" */ = {
+		9B3D30472D09EFFC003CC8CD /* Build configuration list for PBXProject "Pokemon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B3D307B2D09EFFE003CC8CD /* Debug */,
